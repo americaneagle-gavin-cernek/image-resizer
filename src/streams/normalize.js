@@ -1,12 +1,9 @@
 'use strict';
 
 var sharp  = require('sharp');
-var env    = require('../config/environment_vars');
 var map    = require('map-stream');
 
-
 module.exports = function () {
-
   return map( function (image, callback) {
     var normalizedFormat, r;
 
